@@ -23,16 +23,19 @@ export default function EditModal({ tax, onClose, onUpdate }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center">
       <div className="bg-white w-[420px] rounded-xl shadow-lg p-6">
+        
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
+          
           <h2 className="text-lg font-semibold text-gray-800">
             Edit Customer
           </h2>
+
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600"
+            className="text-white hover:text-gray-600"
           >
             ✕
           </button>
@@ -79,8 +82,12 @@ export default function EditModal({ tax, onClose, onUpdate }) {
         <div className="flex justify-end gap-3">
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-md border border-gray-300
-                       text-gray-700 hover:bg-gray-100"
+            className="px-5 py-2 rounded-md
+                      border border-red-500
+                      text-white-600 font-medium
+                      hover:bg-red-50
+                      hover:text-red-700
+                      transition"
           >
             Cancel
           </button>
